@@ -7,5 +7,5 @@ sampledict={
 
     "city": "New york"
 }
-
-
+sampledict["location"] = sampledict.pop("city")
+print(sampledict)
