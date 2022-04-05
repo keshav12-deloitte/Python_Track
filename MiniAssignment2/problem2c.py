@@ -1,14 +1,14 @@
 
 space=4
 spacemiddle=1
-
-for i in range(5):
+n=int(input("enter rows"))
+for i in range(n):
     if(i==0):
-        print(" "*5 + "*"+ " "*4)
-    elif(i<4):
-        print(" "*space + "*" + " "*spacemiddle +"*" + " "*space)
+        print(" "*(n-1)+ "*")
+    elif(i<n-1):
+        print(" "*space + "*" + " "*spacemiddle +"*")
         space=space-1
         spacemiddle=spacemiddle+2
-    elif(i<=5):
-        print(" "+ "*"*9)
+    elif(i==n-1):
+        print("*"*((n*2)-1))
 
