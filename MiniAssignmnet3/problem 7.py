@@ -5,5 +5,5 @@ hashedin={
         'best': [4, 5]
 
           }
-list1=list(hashedin)
+list1=list(hashedin.items())
 print(list1)
