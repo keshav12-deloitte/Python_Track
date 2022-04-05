@@ -8,5 +8,4 @@ sampledict={
     "city": "New york"
 }
 
-sampledict["city"]="location"
-print(sampledict)
+
