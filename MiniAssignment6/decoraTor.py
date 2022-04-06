@@ -1,13 +1,14 @@
-def twice(fun1):
-    def math():
-        fun1()
-    return math()
+def twice_multiply(fun1):
+    def mul(num1, num2):
+        fun1(num1, num2)
+        fun1(num1, num2)
+    return mul
 
 
-@twice
-def multipy_two_numbers(num1, num2):
+@twice_multiply
+def multiply(num1, num2):
     print(num1 * num2)
 
-
-multipy_two_numbers(2, 3)
-
+num1=int(input("enter the first number: "))
+num2=int(input("enter the second  number: "))
+multiply(num1,num2)
