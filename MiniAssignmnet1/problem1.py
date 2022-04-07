@@ -24,14 +24,16 @@ class PairsPossible(StringClass):
         return self.st_arr
     def printPairs(self):
         print(self.st_arr)
+    def lenPairs(self):
+        print(len(self.st_arr))
 
-"""
+
 class EqualSumPairs(PairsPossible):
     def sum(self):
         for i,j in self.st_arr:
             dict1={i+j}
         print(dict1)
-"""
+
 
 
 
@@ -45,7 +47,7 @@ print(c)
 obj.stringToCharactera()
 obj.pairs()
 obj.printPairs()
-"""
-obj1=EqualSumPairs()
-obj1.sum()
-"""
+obj1=EqualSumPairs(PairsPossible)
+obj1.lenPairs()
+
+
